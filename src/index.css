@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  background-color: white;
+}
+html,
+body {
+  min-height: 100vh;
+
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none; /* Completely hides the scrollbar track and thumb */
+    width: 0; /* Ensures no space is reserved for the scrollbar */
+    height: 0;
+  }
+}
+body {
+  padding-inline: 1px;
+}
+#root {
+  height: 100vh;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-block: 1rem;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+input {
+  border: solid black 1px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  body {
+    width: 490px;
+    margin: 0 auto;
+    /* text-align: center; */
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+  }
+}
